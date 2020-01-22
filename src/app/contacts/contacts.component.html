@@ -1,0 +1,95 @@
+
+<div class="container">
+    <div class="row">
+  
+        <label class="text-primary mt-5">Search</label>
+        <input class="form-control mb-5" [(ngModel)] = "h" >
+  
+      <div class="col-md-4" *ngFor="let p of techHome | realsearch:h">
+  
+          <div class="card" style="width: 18rem;">
+              <img src="{{p.urlToImage}}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">{{p.title}}</h5>
+                <p class="card-text">{{p.description}}</p>
+                <a href="{{p.url}}" class="btn btn-primary">Read More...</a>
+              </div>
+            </div>
+  
+  
+      </div>
+  
+  
+    </div>
+  
+  
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<div class="container text-center">
+  <form #formContact="ngForm" (ngSubmit)="addPost(formContact)">
+    <label>Your Name</label>
+    <input type="text" name="userName" class="form-control" [(ngModel)]="userName">
+    <label>Title</label>
+    <input type="text" name="title" class="form-control" [(ngModel)]="title">
+    <label>Discripton</label>
+    <input type="text" name="discription" class="form-control" [(ngModel)]="discription">
+    <label>Your Image</label>
+    <input type="url"  name="avatar" class="form-control" [(ngModel)]="imagePath">
+
+    <br>
+    <img [src]="imagePath" width="200px" height="200px" *ngIf="imgDef">
+    <br>
+    <button type="button" class="btn btn-warning" (click)="imgToggle()">Image Preview </button>
+
+    <br>
+    <button type="submit" class="btn btn-primary">Ok</button>
+
+
+  </form>
+</div>
+
+
+<div class="container text-center" *ngFor="let h of posts">
+  <h1 >{{h.userName}}</h1>
+  <h3>{{h.title}}</h3>
+  <p>{{h.discription}}</p>
+  <img [src]="h.imagePath" width="200px" height="200px" >
+
+ 
+
+</div>
+
+-->

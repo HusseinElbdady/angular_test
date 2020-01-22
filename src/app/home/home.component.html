@@ -1,0 +1,45 @@
+
+
+<div class="container">
+    <div class="row">
+      <label class="text-primary mt-5">Search</label>
+      <input class="form-control mb-5" [(ngModel)] = "h" >
+  
+      <div class="col-md-4" *ngFor="let p of sports | realsearch:h">
+  
+          <div class="card" style="width: 18rem;">
+              <img src="{{p.urlToImage}}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">{{p.title}}</h5>
+                <p class="card-text">{{p.description}}</p>
+                <a href="{{p.url}}" class="btn btn-primary">Read More...</a>
+              </div>
+            </div>
+  
+  
+      </div>
+  
+  
+    </div>
+  
+  
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
